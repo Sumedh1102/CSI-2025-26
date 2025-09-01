@@ -1,4 +1,4 @@
-import { ReactLenis } from "lenis/react"
+
 import { useTransform, motion, useScroll } from "framer-motion"
 import { useRef } from "react"
 import Tech from '../Teamsvideo/tech.mp4'
@@ -69,7 +69,7 @@ export default function index() {
   const step = 1 / projects.length
 
   return (
-    <ReactLenis root>
+    
       <main className="bg-black" ref={container}>
         <section className="text-white w-full bg-zinc-900">
           {projects.map((project, i) => {
@@ -91,7 +91,7 @@ export default function index() {
           })}
         </section>
       </main>
-    </ReactLenis>
+   
   )
 }
 
